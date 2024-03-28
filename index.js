@@ -19,6 +19,6 @@ app.get("/sha256-hmac", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Server started at ${PORT}`);
 });
